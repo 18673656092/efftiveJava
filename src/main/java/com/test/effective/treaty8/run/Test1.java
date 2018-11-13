@@ -1,8 +1,7 @@
 package com.test.effective.treaty8.run;
 
-import com.test.effective.treaty8.Equeals1;
+import com.test.effective.treaty8.CaseInsensitiveString;
 
-import javax.validation.constraints.Max;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,13 +11,13 @@ import java.util.List;
  */
 public class Test1 {
     public static void main(String[] args) {
-        Equeals1 e = new Equeals1("Polish");
+        CaseInsensitiveString e = new CaseInsensitiveString("Polish");
         String s = "polish";
         //true
         System.out.println(e.equals(s));
         //false
         System.out.println(s.equals(e));
-        List<Equeals1> list = new ArrayList<>();
+        List<CaseInsensitiveString> list = new ArrayList<>();
         list.add(e);
         //false
         System.out.println(list.contains(s));
